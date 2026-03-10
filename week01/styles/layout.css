@@ -1,0 +1,94 @@
+
+:root {
+    --heading-font: "Trebuchet MS", sans-serif;
+    --body-font: "Verdana", "Tahoma", sans-serif;
+    --primary-color: gainsboro;
+    --accent-color-primary: silver;
+    --secondary-color: gray;
+    --accent-color-secondary: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, aside {
+    font-family: var(--body-font);
+    color: black;
+}
+
+header, .grid, footer {
+    font-family: var(--heading-font);
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    font-weight: 100;
+}
+
+h1 {
+    font-size: large;
+    color: white;
+}
+
+h2 {
+    font-size: medium;
+    color: black;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    margin: auto;
+}
+
+header h1 {
+    padding: 1em;
+    height: 100px;
+}
+
+header nav {
+    background-color: var(--accent-color-secondary);
+    margin: auto;
+    padding: 1em;
+}
+
+header nav ul li a{
+    font-family: var(--heading-font);
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    height: 175px;
+}
+
+main {
+    background-color: var(--primary-color);
+    padding: 1em;
+    height: 250px;
+}
+
+aside {
+    background-color: var(--accent-color-primary);
+    padding: 1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr;
+}
