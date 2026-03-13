@@ -1,0 +1,168 @@
+
+:root {
+    --heading-font: "Trebuchet MS", sans-serif;
+    --body-font: "Verdana", "Tahoma", sans-serif;
+    --primary-color: #d3cbe0;
+    --accent-color-primary: #898392;
+    --secondary-color: #6d6093;
+    --accent-color-secondary: #292929;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--accent-color-primary);
+    font-family: var(--body-font);
+    color: black;
+}
+
+header, main, footer {
+    font-family: var(--heading-font);
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: 550;
+    color: black
+}
+
+h2 {
+    font-size: medium;
+    font-weight: 100;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    font-size: medium;
+    font-weight: 550;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+header span {
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    color: white;
+    margin: auto;
+}
+
+header h1 {
+    padding: 1em;
+    height: 100px;
+}
+
+header nav {
+    background-color: var(--accent-color-secondary);
+    margin: auto;
+    padding: 1em;
+}
+
+header nav ul li a {
+    font-family: var(--heading-font);
+    color: white;
+    text-decoration: none;
+    flex: 1 0 auto;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    height: 100px;
+}
+
+main {
+    background-color: var(--primary-color);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 1em;
+}
+
+main h1 {
+    text-align: center;
+    grid-column: 1 / 3;
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    display: block;
+    text-align: center;
+    border-radius: 24px 24px 0px 0px;
+    padding: 1em;
+}
+
+figure figcaption {
+    font-size: small;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    display: block;
+    border: 1px solid var(--accent-color-secondary);
+    border-radius: 25px;
+    position: relative;
+}
+
+.margin {
+    margin: 1em;
+}
+
+.card p, .card h3 {
+    width: 329px;
+}
+
+.profile {
+    float: right;
+    margin: 1em;
+    top: 50px;
+    left: 345px;
+    position: absolute;
+}
+
+.utah {
+    float: left;
+    margin: 0 1em 1em 1em;
+}
+
+.card ul {
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 2em;
+}
