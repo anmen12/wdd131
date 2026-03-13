@@ -1,7 +1,7 @@
 
 :root {
-    --heading-font: "Trebuchet MS", sans-serif;
-    --body-font: "Verdana", "Tahoma", sans-serif;
+    --heading-font: "Iosevka Charon", monospace;
+    --body-font: "Iosevka Charon", monospace;
     --primary-color: #d3cbe0;
     --accent-color-primary: #898392;
     --secondary-color: #6d6093;
@@ -32,22 +32,26 @@ h1, h2, h3 {
 
 h1 {
     font-size: x-large;
-    font-weight: 550;
+    font-weight: 600;
     color: black
 }
 
 h2 {
     font-size: medium;
-    font-weight: 100;
+    font-weight: 400;
     color: black;
 }
 
 h3 {
     text-align: center;
     font-size: medium;
-    font-weight: 550;
+    font-weight: 500;
     color: black;
     border-bottom: 1px solid black;
+}
+
+header {
+    text-align: center;
 }
 
 header nav ul {
@@ -61,7 +65,6 @@ header nav ul {
 header span {
     display: block;
     padding: 1em;
-    text-align: center;
 }
 
 header, footer {
@@ -96,7 +99,7 @@ header nav ul li a:hover {
 footer {
     text-align: center;
     padding: 1em;
-    height: 100px;
+    height: 150px;
 }
 
 main {
@@ -124,7 +127,7 @@ section h2 {
 
 figure figcaption {
     font-size: small;
-    font-weight: 100;
+    font-weight: 400;
     color: black;
     text-align: center;
 }
