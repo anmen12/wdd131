@@ -1,0 +1,130 @@
+:root {
+    --heading-font: "Iosevka Charon", monospace;
+    --body-font: "Iosevka Charon", monospace;
+    --primary-color: #d3cbe0;
+    --accent-color-primary: #898392;
+    --secondary-color: #6d6093;
+    --accent-color-secondary: #292929;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--accent-color-primary);
+    font-family: var(--body-font);
+    color: black;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    color: white;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+}
+
+header span {
+    font-size: xx-large;
+    font-weight: 400;
+    padding: 0 2rem 0 0;
+    float: left;
+    position: relative;
+    top: 2.5px;
+    
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    display: none;
+    font-family: var(--heading-font);
+    color: white;
+    text-decoration: none;
+    flex: 1 0 auto;
+    padding: 1em;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+main {
+    background-color: var(--primary-color);
+    padding: 1em;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    gap: 1em;
+    place-items: center;
+}
+
+main div figure img {
+    width: 100%;
+    height: auto;
+}
+
+main div figure figcaption {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+#menu {
+	font-size: 1.5rem;
+    color: white;
+	border: 0;
+	background: none;
+    padding: 0.63rem;
+}
+
+#menu::before {
+	content: "\002630";
+    position: relative;
+    bottom: 1px;
+}
+
+#menu.open::before {
+	content: "X";
+    position: relative;
+    top: 4px;
+}
+
+.open li a {
+    display: block;
+}
