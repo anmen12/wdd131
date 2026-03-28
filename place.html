@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page</title>
+    <meta name="description" content="WDD 131 Country Page Assignment">
+    <meta name="author" content="Bryson Gowans">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+    <body>
+        <header>
+            <span>Scotland</span>
+        </header>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-wide-large.webp" media="(min-width: 1250px)">
+                <source srcset="images/hero-wide-medium.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-wide-small.webp" media="(min-width: 750px)">
+                <source srcset="images/hero-mobile-large.webp" media="(min-width: 500px)">
+                <source srcset="images/hero-mobile-medium.webp" media="(min-width: 250px)">
+                <img src="images/hero-mobile-small.webp" alt="Scottish Landscape">
+            </picture>
+        </div>
+        <section class="data">
+            <h1>Data</h1>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>80,231 sq km</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>5,546,900</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Edinburgh</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>English, Scots, Scottish Gaelic</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Pound Sterling</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC+0</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+44</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD:</th>
+                    <td>.scot</td>
+                </tr>
+            </table>
+        </section>
+        <section class="weather">
+            <h1>Weather </h1>
+            <img src="images/weather.svg" alt="Weather Symbol" width="100" height="100">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td>4&#176;C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Scattered Showers</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td>40 km/h</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td><span id="windchill"></span>&#176;C</td>
+                </tr>
+            </table>
+        </section>
+    </body>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Bryson Gowans | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</html>

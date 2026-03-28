@@ -1,0 +1,66 @@
+:root {
+    --font: "Poppins", sans-serif;
+    --primary-color: #005EB8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, body, footer {
+    font-family: var(--font);
+    width: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header span {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 0 0.4em 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+section img {
+    padding: 1em;
+}
+
+table tr th {
+    text-align: right;
+    width: 50%;
+}
+
+th, td {
+    padding: 0.25em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+}
