@@ -1,0 +1,73 @@
+:root {
+    --font-family: "Averia Libre", system-ui;
+    --primary-color: #e5c5ad;
+    --accent-color-primary: #e1a77b;
+    --secondary-color: #b36024;
+    --accent-color-secondary: #8a4717;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+main {
+    background-color: var(--primary-color);
+}
+
+header, main, footer {
+    width: auto;
+    padding: 1rem;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: x-large;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--font-family);
+    font-size: large;
+    font-weight: 400;
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--accent-color-primary);
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+section p {
+    font-family: var(--font-family);
+    font-size: large;
+    font-weight: 300;
+}
+
+section h3, section p {
+    padding: 0 0 0 1rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
