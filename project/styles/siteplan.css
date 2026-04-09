@@ -15,18 +15,23 @@ body {
     background-color: black;
 }
 
-header, footer {
+header h1, footer p {
     background-color: var(--secondary-color);
+}
+
+header, footer {
+    padding: 1rem 0;
+    background-color: var(--accent-color-secondary);
     text-align: center;
 }
 
 main {
+    padding: 1rem;
     background-color: var(--primary-color);
 }
 
 header, main, footer {
     width: auto;
-    padding: 1rem;
     margin: 0 auto;
     font-family: var(--font-family);
 }
@@ -62,12 +67,68 @@ section p {
     font-weight: 300;
 }
 
-section h3, section p {
-    padding: 0 0 0 1rem;
-}
-
 .plan {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.colors h2 {
+    grid-column: 1 / 5;
+}
+
+.colors div {
+    height: 84px;
+    padding: 1rem;
+    border: 3px solid rgb(0, 0, 0, 0.1);
+    border-radius: 1em;
+}
+
+.header-color {
+    background-color: var(--secondary-color);
+}
+
+.header-accent {
+    background-color: var(--accent-color-secondary);
+}
+
+.main-color {
+    background-color: var(--primary-color);
+}
+
+.main-accent {
+    background-color: var(--accent-color-primary);
+}
+
+picture {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+picture img {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.mobile img {
+    width: 300px;
+    height: auto;
+}
+
+.wide img {
+    width: 600px;
+    height: auto;
 }
