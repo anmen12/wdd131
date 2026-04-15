@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Utah Snake Information</title>
+    <meta name="description" content="WDD 131 final project, contains information about the snakes of utah">
+    <meta name="author" content="Bryson Gowans">
+    <script src="scripts/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+</head>
+<body>
+    <header>
+        <h1>Utah Snake Information</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Non-Venomous Snakes</a></li>
+                <li><a href="#">Venomous Snakes</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture class="hero">
+            <source srcset="images/hero-wide-large.webp" media="(min-width: 1050px)">
+            <source srcset="images/hero-wide-medium.webp" media="(min-width: 850px)">
+            <source srcset="images/hero-wide-small.webp" media="(min-width: 650px)">
+            <source srcset="images/hero-mobile-large.webp" media="(min-width: 450px)">
+            <img src="images/hero-mobile-small.webp" alt="Utah Landscape" loading="lazy">
+        </picture>
+        <div class="purpose">
+            <section>
+                <h2>Site's Purpose</h2>
+                <p>The purpose of this site is to give information on Utah's snakes and what to do if you encounter one</p>
+            </section>
+        </div>
+        <div class="snakes">
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Bryson Gowans | Utah, USA</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

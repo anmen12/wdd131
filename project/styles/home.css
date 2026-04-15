@@ -1,0 +1,213 @@
+:root {
+    --font-family: "Averia Libre", system-ui;
+    --primary-color: #e5c5ad;
+    --accent-color-primary: #e1a77b;
+    --secondary-color: #b36024;
+    --accent-color-secondary: #8a4717;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header h1, header nav, footer p {
+    background-color: var(--secondary-color);
+}
+
+header, footer {
+    padding: 1rem 0;
+    background-color: var(--accent-color-secondary);
+    text-align: center;
+}
+
+main {
+    background-color: var(--primary-color);
+}
+
+main div {
+    padding: 1rem;
+}
+
+header, main, footer {
+    width: auto;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: x-large;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--font-family);
+    font-size: large;
+    font-weight: 400;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header h1 {
+    padding: 0 1rem;
+}
+
+header nav {
+    grid-column: 1 / 3;
+}
+
+#menu {
+	font-size: xx-large;
+    color: black;
+	border: none;
+	background: var(--secondary-color);
+}
+
+#menu::before {
+	content: "\002630";
+    position: relative;
+    bottom: 1px;
+}
+
+#menu.open::before {
+	content: "X";
+    position: relative;
+    top: 2px;
+}
+
+.navigation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+.navigation li a {
+    padding: .5rem;
+    display: none;
+    color: black;
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    padding: .42rem;
+    color: #131313;
+    font-size: larger;
+}
+
+.open li a {
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+}
+
+section {
+    background-color: var(--accent-color-primary);
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+section p {
+    font-family: var(--font-family);
+    font-size: large;
+    font-weight: 300;
+}
+
+.purpose {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.purpose section {
+    padding: 1rem;
+}
+
+.snakes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.snakes section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.snakes section h3 {
+    display: none;
+}
+
+.snakes section img {
+    width: 44%;
+    height: fit-content;
+    padding: 0 0;
+    margin: auto 0;
+    background-color: var(--accent-color-secondary);
+    border-radius: .95rem 0 0 .95rem;
+}
+
+.snakes section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.snakes section div h3 {
+    display: block;
+}
+
+.snakes section div div {
+    width: 136px;
+    margin: 0 auto;
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.snakes section div h3 {
+    margin: 0;
+}
+
+.snakes section div img {
+    width: 40px;
+    height: auto;
+    position: relative;
+    bottom: 7px;
+    background-color: var(--accent-color-primary);
+}
+
+footer p a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: white;
+    text-decoration: underline;
+}
