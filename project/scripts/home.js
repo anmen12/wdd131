@@ -8,24 +8,31 @@ menuButton.addEventListener("click", function() {
 
 const snakes = [
   {
-    snakeName: "Southwest Speckled Rattlesnake",
+    snakeName: "California Kingsnake",
     imagePath:
-    "images/southwest-speckled-rattlesnake.webp",
+    "images/california-kingsnake.webp",
+    isVenomous: false,
+    shortDescription: "This is a short description of the snake",
+  },
+  {
+    snakeName: "Mojave Rattlesnake",
+    imagePath:
+    "images/mojave-rattlesnake.webp",
     isVenomous: true,
     shortDescription: "This is a short description of the snake",
   },
   {
-    snakeName: "Southwest Speckled Rattlesnake",
+    snakeName: "Northern Rubber Boa",
     imagePath:
-    "images/southwest-speckled-rattlesnake.webp",
-    isVenomous: true,
+    "images/northern-rubber-boa.webp",
+    isVenomous: false,
     shortDescription: "This is a short description of the snake",
   },
   {
-    snakeName: "Southwest Speckled Rattlesnake",
+    snakeName: "Ring Necked Snake",
     imagePath:
-    "images/southwest-speckled-rattlesnake.webp",
-    isVenomous: true,
+    "images/ring-necked-snake.webp",
+    isVenomous: false,
     shortDescription: "This is a short description of the snake",
   },
   {
