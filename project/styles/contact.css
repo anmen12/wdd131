@@ -128,14 +128,6 @@ header nav {
     display: block;
 }
 
-.hero {
-    background-color: var(--accent-color-secondary);
-}
-
-.hero img {
-    width: 100%;
-}
-
 section {
     background-color: var(--accent-color-primary);
     border: 1px solid rgb(0, 0, 0, 0.1);
@@ -148,69 +140,90 @@ section p {
     font-weight: 300;
 }
 
-.purpose {
+.qna {
     text-align: center;
     padding-bottom: 0;
 }
 
-.purpose section {
-    padding: 1rem;
-}
-
-.snakes {
+.qna section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-.snakes section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+.qna section div {
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    text-align: start;
 }
 
-.snakes section h3 {
-    display: none;
+.qna section,
+.form section {
+    padding: 1rem;
 }
 
-.snakes section h3 a {
-    color: black;
-    text-decoration: none;
-}
-
-.snakes section img {
-    width: 60%;
-    height: fit-content;
-    margin: auto 0;
-    background-color: var(--accent-color-secondary);
-    border-radius: .95rem 0 0 .95rem;
-}
-
-.snakes section div {
+.form section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.snakes section div h3 {
+.form section form fieldset {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+label {
     display: block;
+    font-family: var(--font-family);
+    font-size: medium;
+    font-weight: 400;
 }
 
-.snakes section div div {
-    width: 136px;
-    margin: 0 auto;
-    padding: 1rem 0 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.required {
+    color: rgb(220, 0, 0);
+    font-size: large;
+    font-weight: 600;
 }
 
-.snakes section div img {
-    width: 40px;
-    height: auto;
-    margin: 0 auto;
-    background-color: var(--accent-color-primary);
+input[type="text"],
+input[type="email"],
+textarea {
+    min-width: 250px;
+    min-height: 22px;
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    background-color: var(--primary-color);
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: .8rem;
+    font-family: var(--font-family);
+    font-size: medium;
+    font-weight: 300;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: #6c9e63;
+    border: 5px solid #51774a;
+    border-radius: 1rem;
+    color: lightgray;
+    font-family: var(--font-family);
+    font-size: large;
+    font-weight: 400;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    text-decoration: underline overline lightgray;
 }
 
 footer p a {

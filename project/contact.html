@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Utah Snake Information</title>
+    <meta name="description" content="WDD 131 final project, contains information about the snakes of utah">
+    <meta name="author" content="Bryson Gowans">
+    <script src="scripts/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact-large.css">
+</head>
+<body>
+    <header>
+        <h1>Utah Snake Information</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="non-venomous.html">Non-Venomous Snakes</a></li>
+                <li><a href="venomous.html">Venomous Snakes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="qna">
+            <section>
+                <h2>Frequently Asked Questions</h2>
+                <div>
+                    <h3>Q: What should I do if I hear a rattlesnake's rattle?</h3>
+                    <p>A: Freeze and locate the location of the rattlesnake. Make sure to stay 5-10 feet away from the snake. If you need to move, step very slowly away from the rattlesnake.</p>
+                </div>
+                <div>
+                    <h3>Q: What should I do if I get bitten by a venomous snake?</h3>
+                    <p>A: Call 911, move away from the snake, clean if possible, and stay calm.</p>
+                </div>
+            </section>
+        </div>
+        <div class="form">
+            <section>
+                <form method="get" action="review.html">
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname">
+
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Form</legend>
+                        <label for="question">Question<span class="required">*</span></label>
+                        <textarea id="question" name="question" required></textarea>
+                    </fieldset>
+                    <input type="submit" value="Ask Your Question">
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Bryson Gowans | Utah, USA</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

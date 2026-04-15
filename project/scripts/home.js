@@ -49,11 +49,6 @@ function createSnakeCards(snakes) {
         let icon = document.createElement("img");
         let description = document.createElement("p");
 
-        name.innerHTML = `Name: ${snake.snakeName}`;
-
-        nameMobile.innerHTML = `Name: ${snake.snakeName}`;
-        infoContainer.appendChild(nameMobile);
-
         img.setAttribute("src",snake.imagePath);
         img.setAttribute("alt",`${snake.snakeName}`);
         img.setAttribute("loading","lazy");
@@ -61,18 +56,22 @@ function createSnakeCards(snakes) {
         iconDescription.innerHTML = `Venomous: `;
         iconContainer.appendChild(iconDescription);
         if(snake.isVenomous) {
+            name.innerHTML = `<a href="venomous.html">${snake.snakeName}</a>`;
             icon.setAttribute("src","images/venomous.svg");
             icon.setAttribute("alt","Venomous");
         }
         else {
+            name.innerHTML = `<a href="non-venomous.html">${snake.snakeName}</a>`;
             icon.setAttribute("src","images/not-venomous.svg");
             icon.setAttribute("alt","Not Venomous");
         }
+        nameMobile.innerHTML = name.innerHTML;
         icon.setAttribute("loading","lazy");
+        infoContainer.appendChild(nameMobile);
         iconContainer.appendChild(icon);
         infoContainer.appendChild(iconContainer);
 
-        description.innerHTML = `Description: ${snake.shortDescription}`;
+        description.innerHTML = `${snake.shortDescription}`;
         infoContainer.appendChild(description);
 
         card.appendChild(name);
