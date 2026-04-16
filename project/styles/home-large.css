@@ -47,6 +47,7 @@
     }
 
     .snakes section div {
+        width: auto;
         padding-top: 0;
     }
 

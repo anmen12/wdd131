@@ -56,7 +56,7 @@ function createSnakeCards(snakes) {
         name.innerHTML = `<span class="label">Name: </span>${snake.snakeName}`;
         infoContainer.appendChild(name);
 
-        iconDescription.innerHTML = `Venomous: `;
+        iconDescription.innerHTML = `Non-Venomous`;
         iconContainer.appendChild(iconDescription);
         if(snake.isVenomous) {
             icon.setAttribute("src","images/venomous.svg");
