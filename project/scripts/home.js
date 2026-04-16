@@ -33,7 +33,7 @@ const snakes = [
     imagePath:
     "images/northern-ring-necked-snake.webp",
     isVenomous: false,
-    shortDescription: "Grey with vibrant red underbelly. 1-1.5ft long",
+    shortDescription: "Grey with vibrant orange underside. 1-1.5ft long",
   },
   {
     snakeName: "Southwestern Speckled Rattlesnake",
@@ -90,6 +90,18 @@ function createSnakeCards(snakes) {
 }
 
 createSnakeCards(snakes);
+
+function recordVisit() {
+    let visits = JSON.parse(localStorage.getItem("numberOfVists"));
+
+    visits++
+    const numberOfVisits = document.querySelector("#visits");
+    numberOfVisits.innerHTML = `<span class="label">Visits: </span>${visits}`;
+
+    localStorage.setItem("numberOfVists", JSON.stringify(visits));
+}
+
+recordVisit();
 
 const year = document.querySelector("#currentyear");
 const today = new Date();

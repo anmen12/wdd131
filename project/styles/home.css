@@ -151,10 +151,17 @@ section p {
 .purpose {
     text-align: center;
     padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    gap: 1rem;
 }
 
 .purpose section {
     padding: 1rem;
+}
+
+.label {
+    font-size: small;
 }
 
 .snakes {

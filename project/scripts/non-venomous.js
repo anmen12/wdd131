@@ -13,7 +13,7 @@ const snakes = [
     "images/california-kingsnake.webp",
     isVenomous: false,
     venomType: "",
-    description: "Black and smaller white to yellowish bands. 3-4ft long",
+    description: "A body with black bands and smaller white to yellowish white bands. 3 to 4 feet in length",
     location: "Southern Utah",
   },
   {
@@ -22,7 +22,7 @@ const snakes = [
     "images/northern-rubber-boa.webp",
     isVenomous: false,
     venomType: "",
-    description: "Dark brown to olive color. 1.5-2ft long",
+    description: "A thicker body of dark brown to tan or olive green with small looking eyes. 1.5 to 2 feet in length",
     location: "Central Northern Utah",
   },
   {
@@ -31,7 +31,7 @@ const snakes = [
     "images/northern-ring-necked-snake.webp",
     isVenomous: false,
     venomType: "Mild Venom. Harmless to Humans",
-    description: "Grey with vibrant red underbelly. 1-1.5ft long",
+    description: "A grey body with a yellow to orange underside qith black specks, and the tail's underside it red. 1 to 1.5 feet in length",
     location: "Western Utah",
   }
 ];

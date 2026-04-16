@@ -13,7 +13,7 @@ const snakes = [
     "images/mojave-rattlesnake.webp",
     isVenomous: true,
     venomType: "Hemotoxins and Neurotoxins. Highly Dangerous",
-    description: "Greenish tint with diamond shapes. 3-4ft long",
+    description: "A yellowish grey body sometimes with a greenish tint with diamond shaped blotches along its body. 3 to 4 feet in length",
     location: "South West Utah",
   },
   {
@@ -22,7 +22,7 @@ const snakes = [
     "images/southwest-speckled-rattlesnake.webp",
     isVenomous: true,
     venomType: "Hemotoxins. Dangerous",
-    description: "Pale brownish peach color with diamond shapes. 3ft long",
+    description: "A pale brownish peach color with diamond shaped blotches aling it's body. Around 3 feet in length",
     location: "South West Utah",
   }
 ];
