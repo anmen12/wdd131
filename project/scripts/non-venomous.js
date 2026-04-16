@@ -12,76 +12,74 @@ const snakes = [
     imagePath:
     "images/california-kingsnake.webp",
     isVenomous: false,
-    shortDescription: "Black and smaller white to yellowish bands. 3-4ft long",
-  },
-  {
-    snakeName: "Mojave Rattlesnake",
-    imagePath:
-    "images/mojave-rattlesnake.webp",
-    isVenomous: true,
-    shortDescription: "Greenish tint with diamond shapes. 3-4ft long",
+    venomType: "",
+    description: "Black and smaller white to yellowish bands. 3-4ft long",
+    location: "Southern Utah",
   },
   {
     snakeName: "Northern Rubber Boa",
     imagePath:
     "images/northern-rubber-boa.webp",
     isVenomous: false,
-    shortDescription: "Dark brown to olive color. 1.5-2ft long",
+    venomType: "",
+    description: "Dark brown to olive color. 1.5-2ft long",
+    location: "Central Northern Utah",
   },
   {
     snakeName: "Northern Ring Necked Snake",
     imagePath:
     "images/northern-ring-necked-snake.webp",
     isVenomous: false,
-    shortDescription: "Grey with vibrant red underbelly. 1-1.5ft long",
-  },
-  {
-    snakeName: "Southwest Speckled Rattlesnake",
-    imagePath:
-    "images/southwest-speckled-rattlesnake.webp",
-    isVenomous: true,
-    shortDescription: "Pale brownish peach color with diamond shapes. 3ft long",
+    venomType: "Harmless to Humans",
+    description: "Grey with vibrant red underbelly. 1-1.5ft long",
+    location: "Western Utah",
   }
 ];
 
 function createSnakeCards(snakes) {
     snakes.forEach(snake => {
         let card = document.createElement("section");
-        let name = document.createElement("h3");
-        let nameMobile = document.createElement("h3");
         let img = document.createElement("img");
         let infoContainer = document.createElement("div");
+        let name = document.createElement("h3");
         let iconContainer = document.createElement("div");
         let iconDescription = document.createElement("h3");
         let icon = document.createElement("img");
+        let venom = document.createElement("p");
         let description = document.createElement("p");
+        let location = document.createElement("p");
 
         img.setAttribute("src",snake.imagePath);
         img.setAttribute("alt",`${snake.snakeName}`);
         img.setAttribute("loading","lazy");
 
+        name.innerHTML = `<span class="label">Name: </span>${snake.snakeName}`;
+        infoContainer.appendChild(name);
+
         iconDescription.innerHTML = `Venomous: `;
         iconContainer.appendChild(iconDescription);
         if(snake.isVenomous) {
-            name.innerHTML = `<a href="venomous.html">${snake.snakeName}</a>`;
             icon.setAttribute("src","images/venomous.svg");
             icon.setAttribute("alt","Venomous");
         }
         else {
-            name.innerHTML = `<a href="non-venomous.html">${snake.snakeName}</a>`;
             icon.setAttribute("src","images/not-venomous.svg");
             icon.setAttribute("alt","Not Venomous");
         }
-        nameMobile.innerHTML = name.innerHTML;
         icon.setAttribute("loading","lazy");
-        infoContainer.appendChild(nameMobile);
         iconContainer.appendChild(icon);
+        if(snake.venomType !== "") {
+            venom.innerHTML = `<span class="label">Venom: </span>${snake.venomType}`;
+            iconContainer.appendChild(venom);
+        }
         infoContainer.appendChild(iconContainer);
 
-        description.innerHTML = `${snake.shortDescription}`;
+        description.innerHTML = `<span class="label">Description: </span>${snake.description}`;
         infoContainer.appendChild(description);
 
-        card.appendChild(name);
+        location.innerHTML = `<span class="label">General Location: </span>${snake.location}`;
+        infoContainer.appendChild(location);
+
         card.appendChild(img);
         card.appendChild(infoContainer);
 

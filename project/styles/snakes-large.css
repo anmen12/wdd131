@@ -1,0 +1,40 @@
+@media screen and (min-width: 650px) {
+    #menu {
+        display: none;
+	}
+
+    header {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    header nav {
+        grid-column: 2 / 3;
+    }
+
+    .navigation {
+        flex-direction: row;
+	}
+
+    .navigation li {
+        flex-direction: row;
+    }
+
+    .navigation li a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .snakes section {
+        flex-direction: row-reverse;
+    }
+
+    .snakes section img {
+        max-width: 500px;
+        width: 50%;
+        border-radius: 0 .95rem .95rem 0;
+    }
+
+    .snakes section div {
+        width: 100%;
+    }
+}
