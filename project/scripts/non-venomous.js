@@ -30,7 +30,7 @@ const snakes = [
     imagePath:
     "images/northern-ring-necked-snake.webp",
     isVenomous: false,
-    venomType: "Harmless to Humans",
+    venomType: "Mild Venom. Harmless to Humans",
     description: "Grey with vibrant red underbelly. 1-1.5ft long",
     location: "Western Utah",
   }
