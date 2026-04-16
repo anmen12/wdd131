@@ -114,8 +114,7 @@ header nav {
     text-decoration: none;
 }
 
-.navigation li a:hover,
-.snakes section h3 a:hover {
+.navigation li a:hover {
     color: #131313;
     text-decoration: underline overline black;
 }

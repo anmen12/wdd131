@@ -30,12 +30,30 @@ const snakes = [
     imagePath:
     "images/northern-ring-necked-snake.webp",
     isVenomous: false,
+  },,
+  {
+    snakeName: "Prairie Rattlesnake",
+    imagePath:
+    "images/prairie-rattlesnake.webp",
+    isVenomous: true,
   },
   {
     snakeName: "Southwestern Speckled Rattlesnake",
     imagePath:
     "images/southwest-speckled-rattlesnake.webp",
     isVenomous: true,
+  },
+  {
+    snakeName: "Western Smooth Greensnake",
+    imagePath:
+    "images/western-smooth-greensnake.webp",
+    isVenomous: false,
+  },
+  {
+    snakeName: "Valley Garter Snake",
+    imagePath:
+    "images/valley-garter-snake.webp",
+    isVenomous: false,
   }
 ];
 

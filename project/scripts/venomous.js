@@ -9,20 +9,32 @@ menuButton.addEventListener("click", function() {
 const snakes = [
   {
     snakeName: "Mojave Rattlesnake",
+    scientificName: "Crotalus scutulatus scutulatus",
     imagePath:
     "images/mojave-rattlesnake.webp",
     isVenomous: true,
     venomType: "Hemotoxins and Neurotoxins. Highly Dangerous",
-    description: "A yellowish grey body sometimes with a greenish tint with diamond shaped blotches along its body. 3 to 4 feet in length",
+    description: "A large yellowish grey body sometimes with a greenish tint with diamond shaped blotches along its body. 3 to 4 feet in length",
     location: "South West Utah",
   },
   {
+    snakeName: "Prairie Rattlesnake",
+    scientificName: "Crotalus viridis",
+    imagePath:
+    "images/prairie-rattlesnake.webp",
+    isVenomous: true,
+    venomType: "Hemotoxins. Dangerous",
+    description: "A large yellowish grey body sometimes with a olive tint with diamond shaped blotches along its body. 3 to 4 feet in length",
+    location: "South East Utah",
+  },
+  {
     snakeName: "Southwestern Speckled Rattlesnake",
+    scientificName: "Crotalus pyrrhus",
     imagePath:
     "images/southwest-speckled-rattlesnake.webp",
     isVenomous: true,
     venomType: "Hemotoxins. Dangerous",
-    description: "A pale brownish peach color with diamond shaped blotches aling it's body. Around 3 feet in length",
+    description: "A large pale brownish peach color with diamond shaped blotches aling it's body. Around 3 feet in length",
     location: "South West Utah",
   }
 ];
@@ -32,7 +44,8 @@ function createSnakeCards(snakes) {
         let card = document.createElement("section");
         let img = document.createElement("img");
         let infoContainer = document.createElement("div");
-        let name = document.createElement("h3");
+        let name = document.createElement("h2");
+        let scientificName = document.createElement("h3");
         let iconContainer = document.createElement("div");
         let iconDescription = document.createElement("h3");
         let icon = document.createElement("img");
@@ -46,6 +59,9 @@ function createSnakeCards(snakes) {
 
         name.innerHTML = `<span class="label">Name: </span>${snake.snakeName}`;
         infoContainer.appendChild(name);
+
+        scientificName.innerHTML = `<span class="label">Scientific Name: </span>${snake.scientificName}`;
+        infoContainer.appendChild(scientificName);
 
         iconDescription.innerHTML = `Venomous`;
         iconContainer.appendChild(iconDescription);

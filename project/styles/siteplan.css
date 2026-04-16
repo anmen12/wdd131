@@ -123,6 +123,10 @@ picture img {
     border: 1px solid rgb(0, 0, 0, 0.1);
 }
 
+.wireframes p {
+    text-align: center;
+}
+
 .mobile img {
     width: 300px;
     height: auto;

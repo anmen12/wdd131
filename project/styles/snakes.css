@@ -114,8 +114,7 @@ header nav {
     text-decoration: none;
 }
 
-.navigation li a:hover,
-.snakes section h3 a:hover {
+.navigation li a:hover {
     color: #131313;
     text-decoration: underline overline black;
 }
@@ -126,14 +125,6 @@ header nav {
 
 .open li a {
     display: block;
-}
-
-.hero {
-    background-color: var(--accent-color-secondary);
-}
-
-.hero img {
-    width: 100%;
 }
 
 section {
